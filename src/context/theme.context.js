@@ -4,7 +4,7 @@ import React, { createContext } from "react";
 
 const ThemeContext = createContext();
 
-function ThemeProvider(props) {
+function ThemeProviderWrapper(props) {
 
   return (
     <ThemeContext.Provider value={"light"}>
@@ -13,4 +13,4 @@ function ThemeProvider(props) {
   )
 }
 
-export { ThemeContext, ThemeProvider };
+export { ThemeContext, ThemeProviderWrapper };
