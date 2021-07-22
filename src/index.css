@@ -26,7 +26,6 @@ code {
 .Navbar {
   display: flex;
   justify-content: space-between;
-  background: #ffffff;
   padding: 10px 20px;
   font-weight: 600;
   border-bottom: 1px solid #000000a8;
@@ -38,12 +37,11 @@ code {
   display: inline-block;
   margin: 0px 20px;
   font-size: 1.2rem;
-  color: #000000;
 }
 
 .ProjectCard {
   padding: 20px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.3);
   margin: 20px;
 }
 
@@ -65,4 +63,34 @@ code {
   padding: 2px 15px;
   font-size: 1rem;
   text-align: center;
+}
+
+.light {
+  background-color: #efeded;
+}
+
+.dark {
+  background-color: #18191a;
+}
+
+.Navbar.light {
+  background-color: #ffffff;
+}
+
+.Navbar.dark {
+  background-color: #252526;
+}
+
+.light a,
+.light p,
+.light h1,
+.light h3 {
+  color: #000000;
+}
+
+.dark a,
+.dark p,
+.dark h1,
+.dark h3 {
+  color: #ffffff;
 }
