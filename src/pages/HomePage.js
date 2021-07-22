@@ -4,7 +4,7 @@ const profileImg = 'https://i.imgur.com/i1gsj0v.png';
 
 
 function HomePage() {
-  const theme = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);       // <== UPDATE
 
   return (
     <div className={"HomePage " + theme}>

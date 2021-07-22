@@ -2,16 +2,16 @@ import { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import projectsData from '../projects-data.json';
 
-import { useContext } from 'react';                        // <== ADD
-import { ThemeContext } from '../context/theme.context';     // <== ADD
+import { useContext } from 'react';
+import { ThemeContext } from '../context/theme.context';
 
 
 function ProjectsPage() {
   const [projects, setProjects] = useState(projectsData);
-  const theme = useContext(ThemeContext);                    // <== ADD
+  const { theme } = useContext(ThemeContext);            // <== UPDATE
 
   return (
-    <div className={"ProjectsPage " + theme}>            {/*  <== UPDATE   */}
+    <div className={"ProjectsPage " + theme}>
       <h1>My Projects</h1>
       <div className="projects">
         {projects.map((p) => <ProjectCard key={p._id} project={p}/>)}
