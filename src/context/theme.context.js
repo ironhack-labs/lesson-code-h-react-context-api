@@ -2,13 +2,13 @@ import React, { createContext } from "react";
 
 const ThemeContext = createContext();
 
-function ThemeProviderWrapper(props) {  // <== CREATE A WRAPPER COMPONENT
+function ThemeProviderWrapper(props) {
 
   return (
-    <ThemeContext.Provider value={"light"}>    {/*  <== SET UP THE PROVIDER INSIDE */}
+    <ThemeContext.Provider value={"light"}>
       {props.children}
     </ThemeContext.Provider>
   )
 }
 
-export { ThemeContext, ThemeProviderWrapper };  // <== UPDATE
+export { ThemeContext, ThemeProviderWrapper };

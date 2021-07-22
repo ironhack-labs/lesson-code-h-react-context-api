@@ -10,9 +10,11 @@ import { ThemeProviderWrapper } from './context/theme.context';    // <== IMPORT
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <ThemeProviderWrapper>
+      
+      <ThemeProviderWrapper>    {/*  <== ADD  */}
         <App />
-      </ThemeProviderWrapper>
+      </ThemeProviderWrapper>   {/*  <== ADD  */}
+
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
