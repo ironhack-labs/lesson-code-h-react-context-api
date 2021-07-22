@@ -26,6 +26,7 @@ code {
 .Navbar {
   display: flex;
   justify-content: space-between;
+  background: #ffffff;
   padding: 10px 20px;
   font-weight: 600;
   border-bottom: 1px solid #000000a8;
@@ -37,6 +38,7 @@ code {
   display: inline-block;
   margin: 0px 20px;
   font-size: 1.2rem;
+  color: #000000;
 }
 
 .ProjectCard {
