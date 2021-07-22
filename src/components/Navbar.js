@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { ThemeContext } from './../context/theme.context';
 
 function Navbar() {
-  const {theme, toggleTheme} = useContext(ThemeContext);       // <== UPDATE
+  const {theme, toggleTheme} = useContext(ThemeContext);
 
   return (
     <nav className={"Navbar " + theme}>
@@ -13,7 +13,6 @@ function Navbar() {
         <NavLink to="/projects" activeClassName="selected">Projects</NavLink>
       </div>
 
-      {/*  👇  ADD  👇   */}
       <button className="theme-btn" onClick={toggleTheme}>
         {theme === 'light' ? 'dark 🌜' : 'light 🟡'}
       </button>
