@@ -9,8 +9,12 @@ function Navbar() {
   return (
     <nav className={"Navbar " + theme}>
       <div>
-        <NavLink to="/" exact activeClassName="selected">Home</NavLink>
-        <NavLink to="/projects" activeClassName="selected">Projects</NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+
+        {/* or with active link styles */}
+        {/* <NavLink to="/" className={({isActive}) => isActive && 'selected'}>Home</NavLink> */}
+        {/* <NavLink to="/projects" className={({isActive}) => isActive && 'selected'}>Projects</NavLink> */}
       </div>
 
       <button className="theme-btn" onClick={toggleTheme}>

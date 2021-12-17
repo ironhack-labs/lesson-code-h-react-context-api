@@ -1,5 +1,5 @@
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <Navbar />
       
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/projects" component={ProjectsPage} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={ <ProjectsPage />} />
+      </Routes>
     </div>
   );
 }
